@@ -159,13 +159,11 @@ public class Lab8P2_DiegoOrdonez extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jp_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jt_iniciarS_nombreU, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                                    .addComponent(jp_IniciarS_Contra))
-                                .addGap(35, 35, 35))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_loginLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jb_ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(140, 140, 140)))
-                        .addGap(1, 1, 1)
+                                    .addComponent(jp_IniciarS_Contra)))
+                            .addGroup(jp_loginLayout.createSequentialGroup()
+                                .addGap(194, 194, 194)
+                                .addComponent(jb_ingresar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(36, 36, 36)
                         .addComponent(jButton2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_loginLayout.createSequentialGroup()
                         .addGap(109, 109, 109)
@@ -738,7 +736,10 @@ public class Lab8P2_DiegoOrdonez extends javax.swing.JFrame {
         for (int i = 0; i < usuarios.size(); i++) {
             if((usuarios.get(i).getNombre().equals(jt_iniciarS_nombreU.getText()))&&(usuarios.get(i).getContra().equals(jp_IniciarS_Contra.getText()))){
             exist = true;
+            
+            
             }
+            al = new adminLog();
         }jtab_cars.setVisible(exist);
         jp_login.setVisible(false);
     }//GEN-LAST:event_jb_ingresarMouseClicked
@@ -845,4 +846,7 @@ public class Lab8P2_DiegoOrdonez extends javax.swing.JFrame {
     private javax.swing.JTextField jtadmin_model;
     private javax.swing.JTextField jtadmin_price;
     // End of variables declaration//GEN-END:variables
+
+    adminLog al;
+
 }
